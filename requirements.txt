@@ -1,0 +1,8 @@
+numpy
+pandas
+jupyter
+openai
+streamlit
+datasets
+torch
+transformers
