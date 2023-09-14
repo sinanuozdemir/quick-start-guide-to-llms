@@ -1,0 +1,326 @@
+                               A Beginner’s Guide to LATEX
+                                     written by David Xiao
+                             (edited by Sachin Ravi and Kevin Wayne )
+
+                                            February 21, 2018
+
+
+1    Introduction
+LATEX is a document markup language (created by Leslie Lamport) for the TEX typesetting system (created
+by Donald Knuth). It is widely used in academia, especially by scientists, engineers, and mathematicians.
+It has emerged as the standard way to display mathematics on the Web (e.g., MathJax, Piazza, WordPress,
+and Coursera). This document is intended for people who have never used LATEX and want a quick crash
+course to get started. For a more comprehensive introduction, check out
+
+                 http://ctan.tug.org/tex-archive/info/lshort/english/lshort.pdf
+
+
+2    How to find and use LATEX?
+Most Princeton university clusters have LATEX installed. If you prefer, you can install it on your home system;
+it is easy to find via your favorite search engine. I recommend using front-end programs such as TEXShop or
+TEXworks. Alternatively, you can use a text editor such as emacs (and its LATEX-mode) and the command
+line. For simplicity in exposition, we will assume that you are compiling from the command line for the rest
+of the guide.
+
+
+3    Basic rules
+Basic LATEX is just text with typesetting commands. Typesetting commands are usually preceded by “\”,
+and any arguments are usually placed inside curly braces “{}”.
+LATEX wraps text in adjacent lines as if they were part of the same paragraph. To start a new paragraph,
+insert an extra “return”:
+  Source:                                                 Output:
+  This is
+  one paragraph.                                           This is one paragraph.
+                                                           This is another.
+  This is another.
+
+To get a newline without starting a new paragraph, use \\.
+To get a comment, use the percent sign % at the beginning of a line. The rest of that particular line will be
+commented out.
+
+
+                                                      1
+4      Creating a new document
+The most basic document has three parts:
+
+\documentclass{article}
+
+\begin{document}
+This is
+one paragraph.
+
+This is another.
+\end{document}
+
+In practice, you typically create a new document by copying an existing document, deleting the stuff between
+the begin and end document commands, and changing some information in the header. In COS 423, you
+will use the following template:
+http://www.cs.princeton.edu/courses/archive/spring18/cos423/latex/problem0-1.tex.
+
+
+5      Compiling
+Suppose our file is named problem0-1.tex. To compile it, invoke pdflatex problem0-1.tex in your Unix
+shell. This will compile the file, assuming there are no errors.1 If there are errors, you can quit the compiler by
+hitting “x” and then enter. Unfortunately, LATEX compiler errors are often not very unhelpful in determining
+the nature of the problem but they usually identify on which line the error occurred.
+Once it successfully compiles, you will get a file named mylatexfile.pdf that you can open and view.
+
+
+6      Organization
+It is important to organize your document.
+
+
+6.1         Sectioning
+There are two sectioning commands that will be useful for you: \section{Name of section} and
+\subsection{Name of subsection}.
+
+
+6.2         Tables
+You can put stuff into tables by using the tabular environment. For example:
+ Source:                                                               Output:
+ \begin{tabular}{r|cl}
+ 1st column & 2nd column & 3rd column\\
+                                                                          1st column      2nd column        3rd column
+ \hline
+                                                                                   a           b            c
+ a & b & c
+ \end{tabular}
+    1 One   quirk is that you may have to invoke latex twice if you are using labels or references. See Section 6.4.
+
+
+                                                                  2
+Note that the command is called tabular and not table. Important points:
+
+    • The “{r|cl}” after the tabular \begin{tabular} indicate the alignment of the three columns: right,
+      center, and left. This is mandatory as it specifies the layout of the table. For more columns, type more
+      alignment commands, e.g. for a table with 5 columns all aligned to the right, you would use rrrrr.
+    • The vertical bar | between the r and c indicates that a vertical line should be drawn between those
+      columns.’
+
+    • The & separates the columns in the body of the table.
+    • A \\ signifies the end of each line of the table.
+    • The command \hline means that a horizontal line should be inserted.
+
+
+6.3    Lists
+You can put stuff into bulleted and enumerated lists by using the enumerate and itemize commands,
+respectively. Nesting is allowed. For example:
+ Source:                                                      Output:
+ \begin{enumerate}
+ \item This is the first enumerated item.                        1. This is the first enumerated item.
+     \begin{itemize}
+     \item This is one bullet.                                          • This is one bullet.
+     \item This is another bullet.                                      • This is another.
+     \end{itemize}
+ \item This is the second enumerated item.                       2. This is the second enumerated item.
+ \end{enumerate}
+
+6.4    Labels and references
+You can refer to a specific section number by using the \label{labelname} command. Place this right
+after you start a section. Then, you may refer to the section number by using \ref{labelname}. The same
+technique can be used to refer to math equations and theorems.
+LATEXcreates and uses a bunch of auxiliary files to support labels and references. Be sure to invoke latex
+twice to compile a file that has labels and references (or if thoses labels and references have changed since
+the last compilation).
+
+
+7     Math
+The primary reason to use LATEX is its ability to typeset mathematical expressions.
+
+
+7.1    Math mode
+Math expressions are separate from text in LATEX. To enter a math environment in the middle of text, use
+the dollar sign $, for example $F = ma$ produces F = ma. Everything between the two $ signs will be
+treated as a math formula.
+
+
+                                                          3
+To type a math expression that is on its own line and centered, delimit it with \[ and \]:
+ Source:                                                  Output:
+ The following is an important equation:                  The following is an important equation:
+ \[ E = mc^2 \]
+                                                                                 E = mc2
+
+To give an equation a number and have it referable, use the equation environment and use a \label
+command:
+ Source:                                             Output:
+ The following is an important equation:
+ \begin{equation}                                     The following is an important equation:
+ \label{emc}
+                                                                            E = mc2               (1)
+ E = mc^2
+ \end{equation}                                       Please memorize Equation 1.
+ Please memorize Equation \ref{emc}.
+
+To typeset several equations together and have them properly aligned, use the align environment:
+  Source:                                                   Output:
+  Some important equations:
+  \begin{align}
+  \label{einstein}                                          Some important equations:
+  E & = mc^2 \\
+                                                                                  E = mc2                   (2)
+  \label{newton}
+  F & = ma \\                                                                     F = ma                    (3)
+  \label{euler}                                                                   iπ
+                                                                                 e = −1                     (4)
+  e^{i \pi} & = -1
+  \end{align}
+The equations are aligned along the & and each line is terminated by \\. To suppress the equation numbering
+(i.e. if the equations won’t be referred to) use align* instead of align.
+
+
+7.2    Writing math expressions
+I will only go over a few common mistakes and hard-to-find expressions regarding how to write math ex-
+pressions. It is quite intuitive otherwise, you can figure most things out quickly with trial and error. All
+expressions in math mode may be nested within each other arbitrarily.
+
+   • Superscript and subscript are done using ^ and _ characters. Note that if you want multiple characters
+     in the super/subscript then you need to surround them with curly braces: $e^i\pi = -1$ gives ei π =
+     −1 whereas $e^{i\pi} = -1$ gives eiπ = −1.
+   • Fractions are done using $\frac{1}{2}$ which gives 12 .
+                                                                     n
+                                                                         
+   • To do a binomial coefficient, use $\binom{n}{k}$ which gives    k       .
+   • Modular arithmetic can be written using the \pmod{n} and \bmod{n} commands. The first puts
+     parentheses and a lot of space around the mod and the second does not.
+   • ∀ and ∃ are written as \forall and \exists.
+   • 6=, ≥, and ≤ are written as \neq, \geq, and \leq.
+
+
+                                                     4
+• · (e.g. for multiplication) is \cdot.
+
+• . . . is produced by \ldots and · · · by \cdots (notice the relative height).
+• ◦ is \circ.
+• ∪, ∩, and \ are \cup, \cap, and \setminus.
+
+• Large ∪ and ∩ signs that behave like summations (see below for summations) are written as \bigcup
+  and \bigcap.
+• Z, R, etc. are produced using \Z, \R, etc.
+• E is produced with \Exp.
+
+• O (n), Ω (n), Θ (n) are produced with \BigO{n}, \BigOmega{n}, and \BigTheta{n}.
+• P and NP are produced using \P, \NP, etc.
+• ` (as opposed to l) is produced with \ell.
+• ≈ is produced with \approx.
+
+• x̂ and x̄ are done with \hat{x} and \bar{x}. A longer bar may be written using \overline{\SAT},
+  which produces SAT .
+• x0 and x00 are done with x’ and x’’, respectively.
+• ε (as opposed to ) may be written with \eps.
+
+• ∈ and ∈
+        / are written as \in and \notin.
+• Negations may be done with \not, for example \not\geq gives 6≥.
+• {0, 1} is abbreviated as \zo.
+
+• The probability sign Pr is defined as \Pr.
+• {} are done with \{ and \}.
+• To draw parentheses, braces, or brackets that resize to match the contents, use \left to precede the
+  left one and \right to precede the right one:
+  Source:
+
+  \[ \Pr\left[\sum_{i=1}^k X_i > c \right] \leq 2^{-\Omega(c^2 k)} \]
+
+  Output:                                      "              #
+                                                   k
+                                                   X                  2
+                                          Pr             Xi > c ≤ 2−Ω(c   k)
+
+                                                   i=1
+
+• Arrays are similar to tables, except they must be used in place of tables when in math mode: instead of
+  using \begin{tabular} and \end{tabular} use \begin{array} and \end{array}. Again, you must
+  give a column specification for how the columns are to be laid out.
+
+
+
+
+                                                          5
+    • Spacing is very different in math mode so text in the middle of a formula is set strangely. If you want
+      to have text in the middle of the formula, use the \text{some text} command. For example,
+      $\P \neq \NP \text{ implies that } \SAT \notin \P$ produces P 6= NP implies that SAT ∈                /
+      P.
+    • Summations and products are done using \sum and \prod respectively. Parameters can be given for
+      the summation/product as well:
+       Source:                                               Output:
+                                                                                    ∞
+                                                                                   X   1
+       \[ \sum_{i=1}^\infty \frac{1}{2^i} = 1 \]                                        i
+                                                                                          =1
+                                                                                   i=1
+                                                                                       2
+
+    • Piecewise functions may be defined using the piecewise environment:
+       Source:                                               Output:
+       \[ f(x) = \begin{piecewise}                                                    
+       1 & \text{ if } x = 0 \\                                                           1, if x = 0
+                                                                            f (x) =
+       0 & \text{ if } x \neq 0                                                           0, if x 6= 0
+       \end{piecewise} \]
+    • You may define new commands using \newcommand{\commandname}{definition}. This is essentially
+      a macro, so that whenever \commandname appears, the text of definition is inserted in its place.
+      If \commandname is already taken, either use a different name or use \renewcommand{...}{...} to
+      overwrite the old definition.
+    • There are many many other symbols available. You can search for “latex symbols” online and come
+      up with the references.
+
+
+8     Writing pseudocode
+It is often necessary to state pseudocode when dealing with specific algorithms. Two packages that are useful
+for writing pseudocode are the algorithm and algorithmcx packages. We use the algorithm environment so
+that the code is not across different pages. We use the algorithmcx package to write the specific pseudocode.
+An example is presented below.
+ Source:                                                  Output:
+ \begin{algorithm}[H]
+   \caption{Euclid’s algorithm}
+   \begin{algorithmic}
+     \INPUT $a \ge 0$, $b \ge 0$
+                                                           Algorithm 1 Euclid’s algorithm
+     \OUTPUT the gcd of $a$ and $b$
+                                                           INPUT: nonnegative integers a and b
+     \Function{gcd}{$x, y$}
+                                                           OUTPUT: the greatest common divisor of a and b
+        \If {$b = 0$}
+                                                             function gcd(x, y)
+          \Return $a$
+                                                                if b = 0 then return a
+        \Else $\;$
+                                                                else return gcd(b, a mod b)
+          \Return \Call{gcd}{$b, a \bmod b$}
+                                                                end if
+        \EndIf
+                                                             end function
+     \EndFunction
+   \end{algorithmic}
+ \end{algorithm}
+
+
+
+                                                      6
+For a more comprehensive review (if-statements, for-loops, while-loops, etc), check out
+http://en.wikibooks.org/wiki/LaTeX/Algorithms#Typesetting_using_the_algorithmicx_package and/or
+http://get-software.net/macros/latex/contrib/algorithmicx/algorithmicx.pdf.
+
+
+9    Figures
+The easiest way to include figures in LATEX is to draw the figure using some other software package (such as
+Powerpoint, Keynote, Illustrator, xfig, or Google drawings) and save it as a .pdf file (perhaps after cropping
+it to the desired size). We use the graphicx package to import it into our document. Suppose for example,
+we have an image pdf file saved in our working directory as “einstein.pdf”. We can use the following code
+to include the image in our document.
+ Source:                                                                   Output:
+ \begin{figure}[p]
+   \centering
+   \includegraphics[width=0.3\textwidth]{einstein.pdf}
+   \caption{Image of Einstein.}
+   \label{fig:einstein}
+ \end{figure}
+For more details about figure formatting, check out
+http://en.wikibooks.org/wiki/LaTeX/Importing_Graphics.
+
+
+
+
+                                                      7
+

@@ -1,0 +1,51 @@
+English,LaTeX
+integral from a to b of x squared,"\int_{a}^{b} x^2 \,dx"
+integral from negative 1 to 1 of x squared,"\int_{-1}^{1} x^2 \,dx"
+integral from negative 1 to infinity of x cubed,"\int_{-1}^{\inf} x^3 \,dx"
+integral from 0 to infinity of x squared,"\int_{0}^{\inf} x^2 \,dx"
+integral from 0 to infinity of y squared,"\int_{0}^{\inf} y^2 \,dy"
+integral from 1 to 2 of x over 2,"\int_{1}^{2} \frac{x}{2} \,dx"
+f of x equals x squared,f(x) = x^2
+h of x equals x squared,h(x) = x^2
+g of x equals x squared,g(x) = x^2
+g of x equals x to the eighth power,g(x) = x^8
+f of x equals x cubed,f(x) = x^3
+f of x equals x,f(x) = x
+h of x equals x to the fifth power,h(x) = x^5
+g of x equals integral from 0 to 10 of x cubed,"g(x) = \int_{0}^{10} x^3 \,dx"
+f of x equals x over n,f(x) = \frac{x}{n}
+f of x equals integral from 1 to 2 of x,"f(x) = \int_{1}^{2} x \,dx"
+f of x equals integral from 0 to 2 of x,"f(x) = \int_{0}^{2} x \,dx"
+f of x equals integral from 1 to 2 of x over 2,"f(x) = \int_{1}^{2} \frac{x}{2} \,dx"
+f of x equals sum from 1 to 5 of x squared,f(x) = \sum_{1}^{5} x^2
+x squared,x^2
+x cubed,x^3
+pi squared,\pi^2
+z squared,z^2
+z over x squared,\frac{z}{x^2}
+f of x equals x squared,f(x) = x^2
+1 over 6,\frac{1}{6}
+2 pi,2 * \pi
+s cubed,s^3
+s to the sixth power,s^6
+2 pi r,2 * \pi * r
+pi over n,\frac{\pi}{n}
+f of n equals pi over n,f(n) = \frac{\pi}{n}
+pi times x,\pi*x
+pi to the fourth power,\pi^4
+pi to the fifth power,\pi^5
+f of x equals x times pi to the fifth power,f(x) = x * \pi^5
+g of x equals x times pi cubed,g(x) = x * \pi^3
+g of x equals pi cubed,g(x) = \pi^3
+1 over n,\frac{1}{n}
+x squared over n,\frac{x^2}{n}
+y squared over x^2,\frac{y^2}{x^2}
+1 over 7 to the seventh power,(\frac{1}{7})^7
+1 over 9 to the seventh power,(\frac{1}{9})^7
+f of x equals x over 9 to the seventh power,(f(x) = \frac{x}{9})^7
+sum from i to n of X i,\sum_{i}^{n} X_i
+sum from 0 to n of 77 n,\sum_{0}^{n} 77 * n
+sum from 0 to 5 of x,\sum_{0}^{5} x
+sum from 1 to x of x,\sum_{1}^{x} x
+sum from 1 to x of x squared,\sum_{1}^{x} x^2
+sum from 1 to 10 of pi squared,\sum_{1}^{10} \pi^2
