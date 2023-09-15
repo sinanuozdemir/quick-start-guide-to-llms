@@ -1,16 +1,18 @@
 
-### Deploying with FastAPI
+# Deploying with FastAPI
 
-#### Installation
+**Note the .env file in there is on purpose and NONE of those keys work. They are there purely for demonstration purposes.**
+
+## Installation and Running
 
 1. Make sure you have FastAPI and uvicorn installed (it is in the requirements.txt)
 
 
-#### Running the App
+### Running the App
 1. From the `semantic-search-fastapi` directory, run `uvicorn api:app  --reload` to start your local flask app
 2. Test the app by  going to [http://localhost:8000/docs](http://localhost:8000/docs)
 
-##### Using Docker
+### Using Docker
 
 In the `deploy` directory:
 
