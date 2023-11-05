@@ -9,3 +9,7 @@ notebooks/8_sawyer_0_grab_data__.ipynb
 .idea/
 .env
 *__pycache__*
+notebooks/results.csv
+notebooks/wandb/
+*.hf
+*.jsonl

@@ -19,30 +19,30 @@ Here are some of the notebooks included in the `notebooks` directory:
 
 #### Part I - Introduction to Large Language Models
 
-* `2_semantic_search.ipynb`: An introduction to semantic search using OpenAI and open source models.
-* `3_prompt_engineering.ipynb`: A guide to effective prompt engineering for instruction aligned LLMs.
-
+* [`2_semantic_search.ipynb`](notebooks/2_semantic_search.ipynb): An introduction to semantic search using OpenAI and open source models.
+* [`3_prompt_engineering.ipynb`](notebooks/3_prompt_engineering.ipynb): A guide to effective prompt engineering for instruction aligned LLMs.
 
 #### Part II - Getting the Most Out of LLMs
 
-* `4_fine_tuned_classification.ipynb`: Learn how to perform text classification through fine-tuning OpenAI models
-* `5_adv_prompt_engineering.ipynb`: Advanced techniques for prompt engineering including k-shot, semantic k-shot, chain of thought prompting, chaining, and building a retrieval augmented generating (RAG) enabled chatbot with GPT-4.
-* `5_VQA.ipynb`: Introduction to prompt chaining and Visual Question Answering (VQA) with open source LLMs
-* `6_recommendation_engine.ipynb`: Building a recommendation engine using custom fine-tuned LLMs
+* [`4_fine_tuned_classification.ipynb`](notebooks/4_fine_tuned_classification.ipynb): Learn how to perform text classification through fine-tuning OpenAI models
+* Check out [`UPDATED 4_fine_tuned_classification_sentiment.ipynb`](notebooks/UPDATED%204_fine_tuned_classification_sentiment.ipynb) for the updated version of the previous notebook because OpenAI made a new Fine-tuning API and Amazon revoked access to the dataset I used (always keeping me on my toes, thanks everyone)
+* [`5_adv_prompt_engineering.ipynb`](notebooks/5_adv_prompt_engineering.ipynb): Advanced techniques for prompt engineering including k-shot, semantic k-shot, chain of thought prompting, chaining, and building a retrieval augmented generating (RAG) enabled chatbot with GPT-4.
+* [`5_VQA.ipynb`](notebooks/5_VQA.ipynb): Introduction to prompt chaining and Visual Question Answering (VQA) with open source LLMs
+* [`6_recommendation_engine.ipynb`](notebooks/6_recommendation_engine.ipynb): Building a recommendation engine using custom fine-tuned LLMs
 
 #### Part III - Advanced LLM Usage
 
-* `7_constructing_a_vqa_system.ipynb`: Step-by-step guide to constructing a Visual Question Answering system using open-source GPT2 and the Vision Transformer.
-* `7_using_our_vqa.ipynb`: A notebook to use the VQA system we built in the previous notebook.
-* `7_rl_flan_t5_summaries.ipynb`: Using Reinforcement Learning (RL) to produce more neutral and grammatically correct summaries with the FLAN-T5 model.
-* `8_latex_gpt2.ipynb`: Fine-tuning GPT-2 to generate LaTeX formulas
-* `8_anime_category_classification_model_freezing.ipynb`: Fine-tuning a BERT model to classify anime categories with a comparison between freezing model layers and keeping the model unfrozen.
-* `8_optimizing_fine_tuning.ipynb`: Best practices for optimizing fine-tuning of transformer models - dynamic padding, gradient accumulation, mixed precision, and more.
-* `8_sawyer_1_instruction_ft.ipynb`: Fine-tuning the instruction model for the SAWYER bot.
-* `8_sawyer_2_train_reward_model.ipynb`: Training a reward model for the SAWYER bot from human preferences.
-* `8_sawyer_3_rl.ipynb`: Using Reinforcement Learning from Human Feedback (RLHF) to further align the SAWYER bot
-* `8_sawyer_4_use_sawyer.ipynb`: Using our SAWYER bot
-* `9_distillation.ipynb`: An exploration of knowledge distillation techniques for transformer models.
+* [`7_constructing_a_vqa_system.ipynb`](notebooks/7_constructing_a_vqa_system.ipynb): Step-by-step guide to constructing a Visual Question Answering system using open-source GPT2 and the Vision Transformer.
+* [`7_using_our_vqa.ipynb`](notebooks/7_using_our_vqa.ipynb): A notebook to use the VQA system we built in the previous notebook.
+* [`7_rl_flan_t5_summaries.ipynb`](notebooks/7_rl_flan_t5_summaries.ipynb): Using Reinforcement Learning (RL) to produce more neutral and grammatically correct summaries with the FLAN-T5 model.
+* [`8_latex_gpt2.ipynb`](notebooks/8_latex_gpt2.ipynb): Fine-tuning GPT-2 to generate LaTeX formulas
+* [`8_anime_category_classification_model_freezing.ipynb`](notebooks/8_anime_category_classification_model_freezing.ipynb): Fine-tuning a BERT model to classify anime categories with a comparison between freezing model layers and keeping the model unfrozen.
+* [`8_optimizing_fine_tuning.ipynb`](notebooks/8_optimizing_fine_tuning.ipynb): Best practices for optimizing fine-tuning of transformer models - dynamic padding, gradient accumulation, mixed precision, and more.
+* [`8_sawyer_1_instruction_ft.ipynb`](notebooks/8_sawyer_1_instruction_ft.ipynb): Fine-tuning the instruction model for the SAWYER bot.
+* [`8_sawyer_2_train_reward_model.ipynb`](notebooks/8_sawyer_2_train_reward_model.ipynb): Training a reward model for the SAWYER bot from human preferences.
+* [`8_sawyer_3_rl.ipynb`](notebooks/8_sawyer_3_rl.ipynb): Using Reinforcement Learning from Human Feedback (RLHF) to further align the SAWYER bot
+* [`8_sawyer_4_use_sawyer.ipynb`](notebooks/8_sawyer_4_use_sawyer.ipynb): Using our SAWYER bot
+* [`9_distillation.ipynb`](notebooks/9_distillation.ipynb): An exploration of knowledge distillation techniques for transformer models.
 
 We will continue to add more notebooks exploring topics like fine-tuning, advanced prompt engineering, combining transformers, and various use-cases. Stay tuned!
 
