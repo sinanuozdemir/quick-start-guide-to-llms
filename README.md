@@ -1,9 +1,17 @@
-# Quick Start Guide to Large Language Models
+<h1 align="center">Quick Start Guide to Large Language Models</h1>
 
-[Get your copy today!](https://learning.oreilly.com/library/view/quick-start-guide/9780138199425/)
-![](images/qsllm.jpeg)
+<p align="center">
+  <a href="https://amazon.com/quick-start-guide-language-models/dp/0138199191">Get your copy today!</a>
+</p>
 
-Welcome to the GitHub repository for the "Quick Start Guide to Large Language Models" book. This repository contains the code snippets and notebooks used in the book, demonstrating various applications of Transformer models.
+<p align="center">
+  <img src="images/qsllm.jpeg" alt="Quick Start Guide to Large Language Models">
+</p>
+
+<p align="center">
+  Welcome to the GitHub repository for the "Quick Start Guide to Large Language Models" book. This repository contains the code snippets and notebooks used in the book, demonstrating various applications of Transformer models.
+</p>
+
 
 ## Repository Structure
 
