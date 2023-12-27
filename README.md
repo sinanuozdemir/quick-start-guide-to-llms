@@ -68,3 +68,7 @@ Contributions are welcome! Feel free to submit a pull request if you have any ad
 ## Disclaimer
 
 This repository is for educational purposes and is meant to accompany the "Quick Start Guide to Large Language Models" book. Please refer to the book for in-depth explanations and discussions of the topics covered in the notebooks.
+
+## More From Sinan
+
+1. Check out Sinan's Newsletter [AI Office Hours](https://ai-office-hours.beehiiv.com/) for more AI/LLM content!
