@@ -1,9 +1,17 @@
-# Quick Start Guide to Large Language Models
+<h1 align="center">Quick Start Guide to Large Language Models</h1>
 
-[Get your copy today!](https://learning.oreilly.com/library/view/quick-start-guide/9780138199425/)
-![](images/qsllm.jpeg)
+<p align="center">
+  <a href="https://amazon.com/quick-start-guide-language-models/dp/0138199191">Get your copy today</a> and please leave a rating/review to tell me what you thought! ⭐⭐⭐⭐⭐
+</p>
 
-Welcome to the GitHub repository for the "Quick Start Guide to Large Language Models" book. This repository contains the code snippets and notebooks used in the book, demonstrating various applications of Transformer models.
+<p align="center">
+  <img src="images/qsllm.jpeg" alt="Quick Start Guide to Large Language Models">
+</p>
+
+<p align="center">
+  Welcome to the GitHub repository for the "Quick Start Guide to Large Language Models" book. This repository contains the code snippets and notebooks used in the book, demonstrating various applications of Transformer models.
+</p>
+
 
 ## Repository Structure
 
@@ -60,3 +68,9 @@ Contributions are welcome! Feel free to submit a pull request if you have any ad
 ## Disclaimer
 
 This repository is for educational purposes and is meant to accompany the "Quick Start Guide to Large Language Models" book. Please refer to the book for in-depth explanations and discussions of the topics covered in the notebooks.
+
+## More From Sinan
+
+1. Check out Sinan's Newsletter [AI Office Hours](https://ai-office-hours.beehiiv.com/) for more AI/LLM content!
+2. Sinan has a podcast called [Practically Intelligent](https://podcasts.apple.com/us/podcast/practically-intelligent/id1678774315) where he chats about the latest and greatest in AI!
+3. Follow the [Getting Started with Data, LLMs and ChatGPT Playlist on O'Reilly](https://www.oreilly.com/playlists/2953f6c7-0e13-49ac-88e2-b951e11388de) for a curated list of Sinan's work!
