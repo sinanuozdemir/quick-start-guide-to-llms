@@ -1,7 +1,7 @@
 <h1 align="center">Quick Start Guide to Large Language Models</h1>
 
 <p align="center">
-  <a href="https://amazon.com/quick-start-guide-language-models/dp/0138199191">Get your copy today!</a>
+  <a href="https://amazon.com/quick-start-guide-language-models/dp/0138199191">Get your copy today</a> and please leave a rating/review to tell me what you thought! ⭐⭐⭐⭐⭐
 </p>
 
 <p align="center">
