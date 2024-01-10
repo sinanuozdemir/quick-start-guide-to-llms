@@ -33,10 +33,11 @@ Here are some of the notebooks included in the `notebooks` directory:
 #### Part II - Getting the Most Out of LLMs
 
 * [`4_fine_tuned_classification.ipynb`](notebooks/4_fine_tuned_classification.ipynb): Learn how to perform text classification through fine-tuning OpenAI models
-* Check out [`UPDATED 4_fine_tuned_classification_sentiment.ipynb`](notebooks/UPDATED%204_fine_tuned_classification_sentiment.ipynb) for the updated version of the previous notebook because OpenAI made a new Fine-tuning API and Amazon revoked access to the dataset I used (always keeping me on my toes, thanks everyone)
+  * Check out [`UPDATED 4_fine_tuned_classification_sentiment.ipynb`](notebooks/UPDATED%204_fine_tuned_classification_sentiment.ipynb) for the updated version of the previous notebook because OpenAI made a new Fine-tuning API and Amazon revoked access to the dataset I used (always keeping me on my toes, thanks everyone)
 * [`5_adv_prompt_engineering.ipynb`](notebooks/5_adv_prompt_engineering.ipynb): Advanced techniques for prompt engineering including k-shot, semantic k-shot, chain of thought prompting, chaining, and building a retrieval augmented generating (RAG) enabled chatbot with GPT-4.
 * [`5_VQA.ipynb`](notebooks/5_VQA.ipynb): Introduction to prompt chaining and Visual Question Answering (VQA) with open source LLMs
 * [`6_recommendation_engine.ipynb`](notebooks/6_recommendation_engine.ipynb): Building a recommendation engine using custom fine-tuned LLMs
+  * Check out this colab notebook here for the most recent update of this case study with more graphs and more compute! [https://colab.research.google.com/drive/1JfxyxdGCDjYeO52Bk1JzW4Af94xndTws?usp=sharing](https://colab.research.google.com/drive/1JfxyxdGCDjYeO52Bk1JzW4Af94xndTws?usp=sharing)
 
 #### Part III - Advanced LLM Usage
 
