@@ -13,3 +13,4 @@ notebooks/results.csv
 notebooks/wandb/
 *.hf
 *.jsonl
+notebooks/fine_tuned_ir_cross_encoder/

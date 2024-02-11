@@ -28,6 +28,7 @@ Here are some of the notebooks included in the `notebooks` directory:
 #### Part I - Introduction to Large Language Models
 
 * [`2_semantic_search.ipynb`](notebooks/2_semantic_search.ipynb): An introduction to semantic search using OpenAI and open source models.
+  * I have an updated version [here](https://colab.research.google.com/drive/1h8dmDclOnYsXKlMDYp1uRuW55xbzypUY?usp=sharing) with the updated OpenAI client usage **plus** the use of the latest V3 OpenAI Embedding. Spoiler alert, the open-source embedder + a fine-tuned cross encoder beat even the largest OpenAI embedder :)
 * [`3_prompt_engineering.ipynb`](notebooks/3_prompt_engineering.ipynb): A guide to effective prompt engineering for instruction aligned LLMs.
 
 #### Part II - Getting the Most Out of LLMs
