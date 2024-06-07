@@ -6,3 +6,5 @@ streamlit
 datasets
 torch
 transformers
+anthropic
+python-dotenv

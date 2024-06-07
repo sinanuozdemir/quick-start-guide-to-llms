@@ -4,7 +4,6 @@ notebooks/old/
 notebooks/user_preds.json
 data/.ipynb_checkpoints/
 images/chapter_images/
-data/anime/
 notebooks/8_sawyer_0_grab_data__.ipynb
 .idea/
 .env
