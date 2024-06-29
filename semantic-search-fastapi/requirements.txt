@@ -1,7 +1,7 @@
 fastapi==0.70.1
 uvicorn==0.16.0
 openai==0.27.2
-pinecone-client==2.0.13
+pinecone-client==4.0.0
 matplotlib
 plotly
 scipy

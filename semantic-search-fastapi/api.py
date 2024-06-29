@@ -4,7 +4,7 @@ import re
 from datetime import datetime
 
 import openai
-import pinecone
+from pinecone import Pinecone, ServerlessSpec
 import uvicorn
 from dotenv import load_dotenv
 from fastapi import FastAPI
@@ -21,28 +21,31 @@ load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 pinecone_key = os.getenv("PINECONE_API_KEY")
 
+
 app = FastAPI()
 
 INDEX_NAME = 'semantic-search'
 ENGINE = 'text-embedding-ada-002'
 
 if pinecone_key:
-    pinecone.init(api_key=pinecone_key, environment="us-west1-gcp")
 
-    if not INDEX_NAME in pinecone.list_indexes():
-        pinecone.create_index(
-            INDEX_NAME,  # The name of the index to create.
-            dimension=1536,  # The dimensionality of the vectors that will be indexed.
-            metric='cosine',  # The similarity metric to use when searching the index.
-            pod_type="p1"  # The type of Pinecone pod to use for hosting the index (in this case, a p1 pod).
+    pc = Pinecone(
+        api_key=pinecone_key
+    )
+    if INDEX_NAME not in pc.list_indexes().names():
+        print(f'Creating index {INDEX_NAME}')
+        pc.create_index(
+            name=INDEX_NAME,  # The name of the index
+            dimension=3072,  # The dimensionality of the vectors for our OpenAI embedder
+            metric='cosine',  # The similarity metric to use when searching the index
+            spec=ServerlessSpec(
+                cloud='aws',
+                region='us-west-2'
+            )
         )
-        print('Pinecone index created')
-    else:
-        print('Pinecone index already exists')
 
     # Store the index as a variable
-    index = pinecone.Index(INDEX_NAME)
-
+    index = pc.Index(name=INDEX_NAME)
 
 def my_hash(s):
     # Return the MD5 hash of the input string as a hexadecimal string
