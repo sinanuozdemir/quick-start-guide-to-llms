@@ -78,15 +78,17 @@ To use this repository:
 
 1. **Clone the repository to your local machine:**
 
-   ```bash
-   git clone https://github.com/yourusername/quick-start-llms.git
+```bash
+git clone https://github.com/yourusername/quick-start-llms.git
 ```
-2. Navigate to the notebooks directory and open the Jupyter notebook of your choice:
+
+2. **Navigate to the notebooks directory and open the Jupyter notebook of your choice:**
 
 ```bash
-cd quick-start-llms/notebooks
+cd quick-start-llms
+```
 
-3. Install the necessary libraries:
+3. **Install the necessary libraries:**
 
 ```bash
 pip install -r requirements.txt
@@ -102,7 +104,6 @@ This repository is for educational purposes and is meant to accompany the "Quick
 
 # More From Sinan
 
-- Newsletter: Check out Sinan's newsletter AI Office Hours for more AI/LLM content.
-- Podcast: Listen to Practically Intelligent, where Sinan discusses the latest developments in AI.
-- O'Reilly Playlist: Follow the Getting Started with Data, LLMs, and ChatGPT Playlist on O'Reilly for a curated list of Sinan's work.
-Copy code
+1. Check out Sinan's Newsletter [AI Office Hours](https://ai-office-hours.beehiiv.com/) for more AI/LLM content!
+2. Sinan has a podcast called [Practically Intelligent](https://podcasts.apple.com/us/podcast/practically-intelligent/id1678774315) where he chats about the latest and greatest in AI!
+3. Follow the [Getting Started with Data, LLMs and ChatGPT Playlist on O'Reilly](https://www.oreilly.com/playlists/2953f6c7-0e13-49ac-88e2-b951e11388de) for a curated list of Sinan's work!
