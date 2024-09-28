@@ -4,11 +4,12 @@
 </p>
 
 <p align="center">
-  <img src="images/qsllm2e.jpg" alt="Quick Start Guide to Large Language Models" width="300">
+  <img src="images/qsllm2e.jpg" href="https://www.amazon.com/Quick-Start-Guide-Language-Models-dp-0135346568/dp/0135346568" alt="Quick Start Guide to Large Language Models" width="300">
 </p>
 
 
-Welcome to the GitHub repository for the **"Quick Start Guide to Large Language Models - Second Edition"**. This repository contains the code snippets and notebooks used in the book, demonstrating various applications and advanced techniques in working with Transformer models and large language models (LLMs).
+Welcome to the GitHub repository for the **"Quick Start Guide to Large Language Models - Second Edition"**. This repository contains the code snippets and notebooks used in the book, demonstrating various applications and advanced techniques in working with Transformer models and large language models (LLMs). [View the code for the First Edition here](https://github.com/sinanuozdemir/quick-start-guide-to-llms/tree/1e)
+
 
 ## Repository Structure
 
