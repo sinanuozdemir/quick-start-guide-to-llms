@@ -1,78 +1,108 @@
-<h1 align="center">Quick Start Guide to Large Language Models</h1>
-
+# Quick Start Guide to Large Language Models - Second Edition
 <p align="center">
-  <a href="https://amazon.com/quick-start-guide-language-models/dp/0138199191">Get your copy today</a> and please leave a rating/review to tell me what you thought! ⭐⭐⭐⭐⭐
+  <a href="https://www.amazon.com/Quick-Start-Guide-Language-Models-dp-0135346568/dp/0135346568">Get your copy today</a> and please leave a rating/review to tell me what you thought! ⭐⭐⭐⭐⭐
 </p>
 
 <p align="center">
-  <img src="images/qsllm.jpeg" alt="Quick Start Guide to Large Language Models">
+  <img src="images/qsllm2e.jpg" alt="Quick Start Guide to Large Language Models" width="300">
 </p>
 
-<p align="center">
-  Welcome to the GitHub repository for the "Quick Start Guide to Large Language Models" book. This repository contains the code snippets and notebooks used in the book, demonstrating various applications of Transformer models.
-</p>
 
+Welcome to the GitHub repository for the **"Quick Start Guide to Large Language Models - Second Edition"**. This repository contains the code snippets and notebooks used in the book, demonstrating various applications and advanced techniques in working with Transformer models and large language models (LLMs).
 
 ## Repository Structure
 
 ### Directories
 
-* `notebooks`: This directory contains Jupyter notebooks for each chapter in the book.
-* `data`: Contains the datasets used in the notebooks.
-* `images`: Contains images and graphs used in the notebooks.
+- `notebooks`: Contains Jupyter notebooks for each chapter in the book.
+- `data`: Contains the datasets used in the notebooks.
+- `images`: Contains images and graphs used in the notebooks.
 
 ### Notebooks
 
-Here are some of the notebooks included in the `notebooks` directory:
+Below is a list of the notebooks included in the `notebooks` directory, organized by the chapters in the book.
 
 #### Part I - Introduction to Large Language Models
 
-* [`2_semantic_search.ipynb`](notebooks/2_semantic_search.ipynb): An introduction to semantic search using OpenAI and open source models.
-  * I have an updated version [here](https://colab.research.google.com/drive/1h8dmDclOnYsXKlMDYp1uRuW55xbzypUY?usp=sharing) with the updated OpenAI client usage **plus** the use of the latest V3 OpenAI Embedding. Spoiler alert, the open-source embedder + a fine-tuned cross encoder beat even the largest OpenAI embedder :)
-* [`3_prompt_engineering.ipynb`](notebooks/3_prompt_engineering.ipynb): A guide to effective prompt engineering for instruction aligned LLMs.
+- **Chapter 2: Semantic Search with LLMs**
+  - [`02_semantic_search.ipynb`](notebooks/02_semantic_search.ipynb): An introduction to semantic search using OpenAI and open-source models.
+
+- **Chapter 3: First Steps with Prompt Engineering**
+  - [`03_prompt_engineering.ipynb`](notebooks/03_prompt_engineering.ipynb): A guide to effective prompt engineering for instruction-aligned LLMs.
+
+- **Chapter 4: The AI Ecosystem: Putting the Pieces Together**
+  - [`04_rag_retrieval.ipynb`](notebooks/04_rag_retrieval.ipynb): Building a Retrieval-Augmented Generation (RAG) pipeline.
+  - [`04_agent.ipynb`](notebooks/04_agent.ipynb): Constructing an AI agent using LLMs and other tools.
 
 #### Part II - Getting the Most Out of LLMs
 
-* [`4_fine_tuned_classification.ipynb`](notebooks/4_fine_tuned_classification.ipynb): Learn how to perform text classification through fine-tuning OpenAI models
-  * Check out [`UPDATED 4_fine_tuned_classification_sentiment.ipynb`](notebooks/UPDATED%204_fine_tuned_classification_sentiment.ipynb) for the updated version of the previous notebook because OpenAI made a new Fine-tuning API and Amazon revoked access to the dataset I used (always keeping me on my toes, thanks everyone)
-* [`5_adv_prompt_engineering.ipynb`](notebooks/5_adv_prompt_engineering.ipynb): Advanced techniques for prompt engineering including k-shot, semantic k-shot, chain of thought prompting, chaining, and building a retrieval augmented generating (RAG) enabled chatbot with GPT-4.
-* [`5_VQA.ipynb`](notebooks/5_VQA.ipynb): Introduction to prompt chaining and Visual Question Answering (VQA) with open source LLMs
-* [`6_recommendation_engine.ipynb`](notebooks/6_recommendation_engine.ipynb): Building a recommendation engine using custom fine-tuned LLMs
-  * Check out this colab notebook here for the most recent update of this case study with more graphs and more compute! [https://colab.research.google.com/drive/1JfxyxdGCDjYeO52Bk1JzW4Af94xndTws?usp=sharing](https://colab.research.google.com/drive/1JfxyxdGCDjYeO52Bk1JzW4Af94xndTws?usp=sharing)
+- **Chapter 5: Optimizing LLMs with Customized Fine-Tuning**
+  - [`05_bert_app_review.ipynb`](notebooks/05_bert_app_review.ipynb): Fine-tuning a BERT model for app review classification.
+  - [`05_openai_app_review_fine_tuning.ipynb`](notebooks/05_openai_app_review_fine_tuning.ipynb): Fine-tuning OpenAI models for app review classification.
+
+- **Chapter 6: Advanced Prompt Engineering**
+  - [`06_adv_prompt_engineering.ipynb`](notebooks/06_adv_prompt_engineering.ipynb): Advanced techniques in prompt engineering, including output validation and semantic few-shot learning.
+
+- **Chapter 7: Customizing Embeddings and Model Architectures**
+  - [`07_recommendation_engine.ipynb`](notebooks/07_recommendation_engine.ipynb): Building a recommendation engine using custom fine-tuned LLMs and embeddings.
 
 #### Part III - Advanced LLM Usage
 
-* [`7_constructing_a_vqa_system.ipynb`](notebooks/7_constructing_a_vqa_system.ipynb): Step-by-step guide to constructing a Visual Question Answering system using open-source GPT2 and the Vision Transformer.
-* [`7_using_our_vqa.ipynb`](notebooks/7_using_our_vqa.ipynb): A notebook to use the VQA system we built in the previous notebook.
-* [`7_rl_flan_t5_summaries.ipynb`](notebooks/7_rl_flan_t5_summaries.ipynb): Using Reinforcement Learning (RL) to produce more neutral and grammatically correct summaries with the FLAN-T5 model.
-* [`8_latex_gpt2.ipynb`](notebooks/8_latex_gpt2.ipynb): Fine-tuning GPT-2 to generate LaTeX formulas
-* [`8_anime_category_classification_model_freezing.ipynb`](notebooks/8_anime_category_classification_model_freezing.ipynb): Fine-tuning a BERT model to classify anime categories with a comparison between freezing model layers and keeping the model unfrozen.
-* [`8_optimizing_fine_tuning.ipynb`](notebooks/8_optimizing_fine_tuning.ipynb): Best practices for optimizing fine-tuning of transformer models - dynamic padding, gradient accumulation, mixed precision, and more.
-* [`8_sawyer_1_instruction_ft.ipynb`](notebooks/8_sawyer_1_instruction_ft.ipynb): Fine-tuning the instruction model for the SAWYER bot.
-* [`8_sawyer_2_train_reward_model.ipynb`](notebooks/8_sawyer_2_train_reward_model.ipynb): Training a reward model for the SAWYER bot from human preferences.
-* [`8_sawyer_3_rl.ipynb`](notebooks/8_sawyer_3_rl.ipynb): Using Reinforcement Learning from Human Feedback (RLHF) to further align the SAWYER bot
-* [`8_sawyer_4_use_sawyer.ipynb`](notebooks/8_sawyer_4_use_sawyer.ipynb): Using our SAWYER bot
-* [`9_distillation.ipynb`](notebooks/9_distillation.ipynb): An exploration of knowledge distillation techniques for transformer models.
+- **Chapter 9: Moving Beyond Foundation Models**
+  - [`09_constructing_a_vqa_system.ipynb`](notebooks/09_constructing_a_vqa_system.ipynb): Step-by-step guide to constructing a Visual Question Answering (VQA) system using GPT-2 and Vision Transformer.
+  - [`09_using_our_vqa.ipynb`](notebooks/09_using_our_vqa.ipynb): Using the VQA system built in the previous notebook.
+  - [`09_flan_t5_rl.ipynb`](notebooks/09_flan_t5_rl.ipynb): Using Reinforcement Learning (RL) to improve FLAN-T5 model outputs.
 
-We will continue to add more notebooks exploring topics like fine-tuning, advanced prompt engineering, combining transformers, and various use-cases. Stay tuned!
+- **Chapter 10: Advanced Open-Source LLM Fine-Tuning**
+  - [`10_SAWYER_LLAMA_SFT.ipynb`](notebooks/10_SAWYER_LLAMA_SFT.ipynb): Fine-tuning the Llama-3 model to create the SAWYER bot.
+  - [`10_SAWYER_Reward_Model.ipynb`](notebooks/10_SAWYER_Reward_Model.ipynb): Training a reward model from human preferences for the SAWYER bot.
+  - [`10_SAWYER_RLF.ipynb`](notebooks/10_SAWYER_RLF.ipynb): Applying Reinforcement Learning from Human Feedback (RLHF) to align the SAWYER bot.
+  - [`10_SAWYER_USE_SAWYER.ipynb`](notebooks/10_SAWYER_USE_SAWYER.ipynb): Using the SAWYER bot.
+  - [`10_anime_category_classification_model_freezing.ipynb`](notebooks/10_anime_category_classification_model_freezing.ipynb): Fine-tuning a BERT model for anime category classification, comparing layer freezing techniques.
+  - [`10_latex_gpt2.ipynb`](notebooks/10_latex_gpt2.ipynb): Fine-tuning GPT-2 to generate LaTeX formulas.
+  - [`10_optimizing_fine_tuning.ipynb`](notebooks/10_optimizing_fine_tuning.ipynb): Best practices for optimizing fine-tuning of transformer models.
 
+- **Chapter 11: Moving LLMs into Production**
+  - [`11_distillation_example_1.ipynb`](notebooks/11_distillation_example_1.ipynb): Exploring knowledge distillation techniques for transformer models.
+  - [`11_distillation_example_2.ipynb`](notebooks/11_distillation_example_2.ipynb): Advanced distillation methods and applications.
+  - [`11_llama_quantization.ipynb`](notebooks/11_llama_quantization.ipynb): Quantizing Llama models for efficient deployment.
+
+- **Chapter 12: Evaluating LLMs**
+  - [`12_llm_calibration.ipynb`](notebooks/12_llm_calibration.ipynb): Techniques for calibrating LLM outputs.
+  - [`12_llm_gen_eval.ipynb`](notebooks/12_llm_gen_eval.ipynb): Methods for evaluating the generative capabilities of LLMs.
+  - [`12_cluster.ipynb`](notebooks/12_cluster.ipynb): Clustering techniques for analyzing LLM outputs.
 
 ## How to Use
 
-To use this repository, clone it to your local machine, navigate to the notebooks directory, and open the Jupyter notebook of your choice. Note that some notebooks may require specific datasets, which can be found in the `data` directory.
+To use this repository:
 
-Please ensure that you have the necessary libraries installed and that they are up to date. This can usually be done by running `pip install -r requirements.txt` in the terminal.
+1. **Clone the repository to your local machine:**
+
+   ```bash
+   git clone https://github.com/yourusername/quick-start-llms.git
+```
+2. Navigate to the notebooks directory and open the Jupyter notebook of your choice:
+
+```bash
+cd quick-start-llms/notebooks
+
+3. Install the necessary libraries:
+
+```bash
+pip install -r requirements.txt
+```
+
+Note: Some notebooks may require specific datasets, which can be found in the data directory.
 
 ## Contributing
-
-Contributions are welcome! Feel free to submit a pull request if you have any additions, corrections, or enhancements to submit.
+Contributions are welcome! If you have any additions, corrections, or enhancements, feel free to submit a pull request.
 
 ## Disclaimer
+This repository is for educational purposes and is meant to accompany the "Quick Start Guide to Large Language Models - Second Edition" book. Please refer to the book for in-depth explanations and discussions of the topics covered in the notebooks.
 
-This repository is for educational purposes and is meant to accompany the "Quick Start Guide to Large Language Models" book. Please refer to the book for in-depth explanations and discussions of the topics covered in the notebooks.
+# More From Sinan
 
-## More From Sinan
-
-1. Check out Sinan's Newsletter [AI Office Hours](https://ai-office-hours.beehiiv.com/) for more AI/LLM content!
-2. Sinan has a podcast called [Practically Intelligent](https://podcasts.apple.com/us/podcast/practically-intelligent/id1678774315) where he chats about the latest and greatest in AI!
-3. Follow the [Getting Started with Data, LLMs and ChatGPT Playlist on O'Reilly](https://www.oreilly.com/playlists/2953f6c7-0e13-49ac-88e2-b951e11388de) for a curated list of Sinan's work!
+- Newsletter: Check out Sinan's newsletter AI Office Hours for more AI/LLM content.
+- Podcast: Listen to Practically Intelligent, where Sinan discusses the latest developments in AI.
+- O'Reilly Playlist: Follow the Getting Started with Data, LLMs, and ChatGPT Playlist on O'Reilly for a curated list of Sinan's work.
+Copy code
