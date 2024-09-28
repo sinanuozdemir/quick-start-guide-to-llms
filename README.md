@@ -3,7 +3,7 @@
   <a href="https://www.amazon.com/Quick-Start-Guide-Language-Models-dp-0135346568/dp/0135346568">Get your copy today</a> and please leave a rating/review to tell me what you thought! ⭐⭐⭐⭐⭐
 </p>
 
-<p align="center">
+<p align="center" href="https://www.amazon.com/Quick-Start-Guide-Language-Models-dp-0135346568/dp/0135346568">
   <img src="images/qsllm2e.jpg" href="https://www.amazon.com/Quick-Start-Guide-Language-Models-dp-0135346568/dp/0135346568" alt="Quick Start Guide to Large Language Models" width="300">
 </p>
 
