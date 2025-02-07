@@ -43,7 +43,9 @@ Below is a list of the notebooks included in the `notebooks` directory, organize
 
 - **Chapter 6: Advanced Prompt Engineering**
   - [`06_adv_prompt_engineering.ipynb`](notebooks/06_adv_prompt_engineering.ipynb): Advanced techniques in prompt engineering, including output validation and semantic few-shot learning.
-  - [`06_adv_prompt_engineering%20-%20DEEPSEEK.ipynb`](notebooks/06_adv_prompt_engineering - DEEPSEEK.ipynb): Advanced techniques in prompt engineering, including output validation and semantic few-shot learning.
+
+
+  - [`06_adv_prompt_engineering - DEEPSEEK.ipynb`](notebooks/06_adv_prompt_engineering%20-%20DEEPSEEK.ipynb): Extending the MathQA case study to Deepseek V3 and R1. Prompting stil seems to matter :) 
 
 - **Chapter 7: Customizing Embeddings and Model Architectures**
   - [`07_recommendation_engine.ipynb`](notebooks/07_recommendation_engine.ipynb): Building a recommendation engine using custom fine-tuned LLMs and embeddings.
