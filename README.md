@@ -45,7 +45,9 @@ Below is a list of the notebooks included in the `notebooks` directory, organize
   - [`06_adv_prompt_engineering.ipynb`](notebooks/06_adv_prompt_engineering.ipynb): Advanced techniques in prompt engineering, including output validation and semantic few-shot learning.
 
 
-  - [`06_adv_prompt_engineering - DEEPSEEK.ipynb`](notebooks/06_adv_prompt_engineering%20-%20DEEPSEEK.ipynb): Extending the MathQA case study to Deepseek V3 and R1. Prompting stil seems to matter :) 
+  - [`06_adv_prompt_engineering - DEEPSEEK.ipynb`](notebooks/06_adv_prompt_engineering%20-%20DEEPSEEK.ipynb): Extending the MathQA case study to Deepseek V3 and R1. Prompting still seems to matter :) 
+
+  - [`06_adv_prompt_engineering - Llama 4.ipynb`](notebooks/06_adv_prompt_engineering%20-%20Llama4.ipynb): Extending the MathQA case study to Llama 4 Scout. Interesting the prompt responds well to CoT but not as much to Few-shot prompting on this benchmark.
 
 - **Chapter 7: Customizing Embeddings and Model Architectures**
   - [`07_recommendation_engine.ipynb`](notebooks/07_recommendation_engine.ipynb): Building a recommendation engine using custom fine-tuned LLMs and embeddings.
