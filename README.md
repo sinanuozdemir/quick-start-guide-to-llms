@@ -64,6 +64,8 @@ Below is a list of the notebooks included in the `notebooks` directory, organize
   - [`10_SAWYER_Reward_Model.ipynb`](notebooks/10_SAWYER_Reward_Model.ipynb): Training a reward model from human preferences for the SAWYER bot.
   - [`10_SAWYER_RLF.ipynb`](notebooks/10_SAWYER_RLF.ipynb): Applying Reinforcement Learning from Human Feedback (RLHF) to align the SAWYER bot.
   - [`10_SAWYER_USE_SAWYER.ipynb`](notebooks/10_SAWYER_USE_SAWYER.ipynb): Using the SAWYER bot.
+  - [SAWYER Bonus: Adding further knowledge to SAWYER through SFT](https://colab.research.google.com/drive/12JeS96SVLIyY06bzJs96B5PdTt1Pga06?usp=sharing)
+
   - [`10_anime_category_classification_model_freezing.ipynb`](notebooks/10_anime_category_classification_model_freezing.ipynb): Fine-tuning a BERT model for anime category classification, comparing layer freezing techniques.
   - [`10_latex_gpt2.ipynb`](notebooks/10_latex_gpt2.ipynb): Fine-tuning GPT-2 to generate LaTeX formulas.
   - [`10_optimizing_fine_tuning.ipynb`](notebooks/10_optimizing_fine_tuning.ipynb): Best practices for optimizing fine-tuning of transformer models.
