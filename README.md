@@ -91,7 +91,7 @@ To use this repository:
 1. **Clone the repository to your local machine:**
 
 ```bash
-git clone https://github.com/yourusername/quick-start-llms.git
+gh repo clone sinanuozdemir/quick-start-guide-to-llms
 ```
 
 2. **Navigate to the notebooks directory and open the Jupyter notebook of your choice:**
@@ -101,12 +101,20 @@ cd quick-start-llms
 ```
 
 3. **Install the necessary libraries:**
+The traditional `pip` command installs Python packages globally, which can lead to conflicts and dependency issues. As an alternative, it is recommended to use [uv](https://docs.astral.sh/uv), an extremely fast Python package and project manager. uv provides a convenient way to create virtual environments and install necessary dependencies in a single step. This approach helps isolate project-specific packages, ensuring a clean and organized development environment for each project.
 
 ```bash
-pip install -r requirements.txt
+uv sync
 ```
 
 Note: Some notebooks may require specific datasets, which can be found in the data directory.
+
+4. **Run Jupyter-lab**
+To examine the notebook files, launch Jupyter Lab. This will open an interactive development environment where you can view, edit, and run your notebook files.
+
+```bash
+uv run jupyter-lab
+```
 
 ## Contributing
 Contributions are welcome! If you have any additions, corrections, or enhancements, feel free to submit a pull request.
