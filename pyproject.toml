@@ -1,0 +1,18 @@
+[project]
+name = "quick-start-guide-to-llms"
+version = "0.1.0"
+description = "The Official Repo for Quick Start Guide to Large Language Models"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "anthropic>=0.45.2",
+    "datasets>=3.2.0",
+    "jupyter>=1.1.1",
+    "numpy>=2.2.2",
+    "openai>=1.60.2",
+    "pandas>=2.2.3",
+    "python-dotenv>=1.0.1",
+    "streamlit>=1.41.1",
+    "torch>=2.6.0",
+    "transformers>=4.48.2",
+]
